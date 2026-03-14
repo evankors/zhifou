@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>查理论｜知否</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, Arial;
+            background: #f5f6f7;
+            color: #333;
+        }
+
+        .container {
+            width: 900px;
+            margin: 80px auto;
+            background: #fff;
+            border-radius: 10px;
+            padding: 36px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.06);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        .subtitle {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .desc {
+            margin-top: 22px;
+            line-height: 1.8;
+        }
+
+        .actions {
+            margin-top: 28px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 20px;
+            border: 1px solid #3dbb7f;
+            color: #3dbb7f;
+            font-size: 14px;
+        }
+
+        .btn.primary {
+            background: #3dbb7f;
+            color: #fff;
+        }
+
+        .section-title {
+            margin-top: 28px;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        .theory-list {
+            display: grid;
+            gap: 12px;
+        }
+
+        .theory-item {
+            border: 1px solid #e6e9ef;
+            border-radius: 8px;
+            background: #fafbfc;
+            padding: 14px 16px;
+        }
+
+        .theory-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .theory-text {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        .theory-tags {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .theory-tag {
+            font-size: 12px;
+            color: #2f9f6f;
+            background: #eaf6f1;
+            border-radius: 14px;
+            padding: 4px 10px;
+        }
+    </style>
+</head>
+<body>
+<style>
+.global-nav-search {
+    position: sticky;
+    top: 0;
+    z-index: 1200;
+    background: rgba(255,255,255,.95);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #eceff3;
+}
+
+.global-nav-search .inner {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.global-nav-search .logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #1f2937;
+    border: 1px solid #d8dde6;
+    background: #fff;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.global-nav-search form {
+    display: flex;
+    flex: 1;
+    background: #fff;
+    border: 1px solid #d8dde6;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.global-nav-search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 10px 14px;
+    background: transparent;
+}
+
+.global-nav-search button {
+    border: none;
+    background: #3dbb7f;
+    color: #fff;
+    padding: 0 18px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.global-nav-search .user-info {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: #444;
+}
+
+.global-nav-search .user-info a {
+    text-decoration: none;
+    color: #2f9f6f;
+}
+</style>
+
+<div class="global-nav-search">
+    <div class="inner">
+        <a class="logo" href="/">知否</a>
+        <form method="get" action="/">
+            <input name="q" value="" placeholder="搜索：理论 / 实验 / 老师 / 学院 / 论文">
+            <button type="submit">搜索</button>
+        </form>
+        
+    </div>
+</div>
+
+<div class="container">
+    <h1>查理论</h1>
+    <div class="subtitle">经典与前沿理论</div>
+    <div class="desc">在这里浏览学科理论脉络、核心概念和代表性研究。</div>
+
+    
+    <h2 class="section-title">理论介绍</h2>
+    <div class="theory-list">
+        
+        <div class="theory-item">
+            <div class="theory-name">计划行为理论（Theory of Planned Behavior, TPB）</div>
+            <div class="theory-text">由 Ajzen 提出，强调行为意向是行为最直接前因，意向受态度、主观规范和知觉行为控制共同影响。</div>
+            <div class="theory-tags">
+                
+                <span class="theory-tag">行为意向</span>
+                
+                <span class="theory-tag">态度</span>
+                
+                <span class="theory-tag">主观规范</span>
+                
+                <span class="theory-tag">知觉行为控制</span>
+                
+            </div>
+            <div class="theory-text" style="margin-top:10px;"><strong>典型应用：</strong>常用于解释知识分享、绿色行为、技术采纳、健康行为等。</div>
+        </div>
+        
+        <div class="theory-item">
+            <div class="theory-name">资源保存理论（Conservation of Resources, COR）</div>
+            <div class="theory-text">由 Hobfoll 提出，认为个体会努力获取、维持并保护资源；资源丧失会引发压力，资源获得会促进积极状态。</div>
+            <div class="theory-tags">
+                
+                <span class="theory-tag">资源丧失</span>
+                
+                <span class="theory-tag">资源获得</span>
+                
+                <span class="theory-tag">压力反应</span>
+                
+                <span class="theory-tag">资源投资</span>
+                
+            </div>
+            <div class="theory-text" style="margin-top:10px;"><strong>典型应用：</strong>常用于工作压力、倦怠、工作-家庭冲突、领导支持等研究。</div>
+        </div>
+        
+        <div class="theory-item">
+            <div class="theory-name">社会交换理论（Social Exchange Theory, SET）</div>
+            <div class="theory-text">强调组织情境中的互惠关系，员工会基于感知到的支持与公平做出回报性行为。</div>
+            <div class="theory-tags">
+                
+                <span class="theory-tag">互惠</span>
+                
+                <span class="theory-tag">组织支持</span>
+                
+                <span class="theory-tag">回报行为</span>
+                
+                <span class="theory-tag">关系质量</span>
+                
+            </div>
+            <div class="theory-text" style="margin-top:10px;"><strong>典型应用：</strong>常用于组织承诺、离职倾向、组织公民行为等研究。</div>
+        </div>
+        
+        <div class="theory-item">
+            <div class="theory-name">自我决定理论（Self-Determination Theory, SDT）</div>
+            <div class="theory-text">强调自主、胜任、关系三种基本心理需求满足对内在动机和行为持续性的影响。</div>
+            <div class="theory-tags">
+                
+                <span class="theory-tag">自主需要</span>
+                
+                <span class="theory-tag">胜任需要</span>
+                
+                <span class="theory-tag">关系需要</span>
+                
+                <span class="theory-tag">内在动机</span>
+                
+            </div>
+            <div class="theory-text" style="margin-top:10px;"><strong>典型应用：</strong>常用于学习投入、员工敬业、创新行为、教育心理研究。</div>
+        </div>
+        
+        <div class="theory-item">
+            <div class="theory-name">信号理论（Signaling Theory）</div>
+            <div class="theory-text">在信息不对称情境下，行为主体通过可信信号传递质量或意图，接收方据此判断并决策。</div>
+            <div class="theory-tags">
+                
+                <span class="theory-tag">信息不对称</span>
+                
+                <span class="theory-tag">信号发送</span>
+                
+                <span class="theory-tag">信号解读</span>
+                
+                <span class="theory-tag">决策判断</span>
+                
+            </div>
+            <div class="theory-text" style="margin-top:10px;"><strong>典型应用：</strong>常用于招聘、品牌传播、资本市场、平台治理研究。</div>
+        </div>
+        
+    </div>
+    
+
+    <div class="actions">
+        <a class="btn primary" href="/ask-subject">去问老师</a>
+        <a class="btn" href="/">返回首页</a>
+    </div>
+</div>
+
+</body>
+</html>

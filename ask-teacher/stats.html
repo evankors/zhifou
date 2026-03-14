@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>管理学老师｜问老师</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, Arial;
+            background: #f5f6f7;
+        }
+
+        .container {
+            width: 1100px;
+            margin: 40px auto;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 26px;
+        }
+
+        .teacher-list {
+            background: #fff;
+            border-radius: 10px;
+            padding: 10px 30px;
+        }
+
+        .teacher-item {
+            display: flex;
+            align-items: center;
+            padding: 22px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .teacher-item:last-child {
+            border-bottom: none;
+        }
+
+        .avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+            background: #ddd;
+        }
+
+        .teacher-info {
+            flex: 1;
+        }
+
+        .teacher-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .teacher-meta {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 6px;
+        }
+
+        .teacher-stats {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .teacher-stats span {
+            margin-right: 14px;
+        }
+
+        .teacher-tags span {
+            display: inline-block;
+            font-size: 12px;
+            color: #3dbb7f;
+            border: 1px solid #3dbb7f;
+            padding: 3px 10px;
+            border-radius: 14px;
+            margin-right: 6px;
+            margin-top: 4px;
+        }
+
+        .teacher-action {
+            text-align: right;
+            min-width: 140px;
+        }
+
+        .teacher-price {
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .ask-btn {
+            border: 1px solid #3dbb7f;
+            color: #3dbb7f;
+            padding: 8px 18px;
+            border-radius: 18px;
+            cursor: pointer;
+            background: #fff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            line-height: 1;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        .ask-btn:hover {
+            background: #3dbb7f;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<style>
+.global-nav-search {
+    position: sticky;
+    top: 0;
+    z-index: 1200;
+    background: rgba(255,255,255,.95);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #eceff3;
+}
+
+.global-nav-search .inner {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.global-nav-search .logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #1f2937;
+    border: 1px solid #d8dde6;
+    background: #fff;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.global-nav-search form {
+    display: flex;
+    flex: 1;
+    background: #fff;
+    border: 1px solid #d8dde6;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.global-nav-search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 10px 14px;
+    background: transparent;
+}
+
+.global-nav-search button {
+    border: none;
+    background: #3dbb7f;
+    color: #fff;
+    padding: 0 18px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.global-nav-search .user-info {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: #444;
+}
+
+.global-nav-search .user-info a {
+    text-decoration: none;
+    color: #2f9f6f;
+}
+</style>
+
+<div class="global-nav-search">
+    <div class="inner">
+        <a class="logo" href="/">知否</a>
+        <form method="get" action="/">
+            <input name="q" value="" placeholder="搜索：理论 / 实验 / 老师 / 学院 / 论文">
+            <button type="submit">搜索</button>
+        </form>
+        
+    </div>
+</div>
+
+<div class="container">
+    <h1>统计 / 数学 · 可咨询老师</h1>
+    <div class="subtitle">数理统计 / 计量方法</div>
+
+    <div class="teacher-list">
+        
+        
+            <div class="teacher-item">
+            <div style="position:relative;">
+                <img class="avatar" src="/static/uploads/teachers/41/avatar.svg" alt="郭然">
+                
+            </div>
+
+            <div class="teacher-info">
+                <div class="teacher-name">郭然</div>
+                <div class="teacher-meta">上海交通大学 · 讲师</div>
+                <div class="teacher-stats">
+                    <span>统计 / 数学</span>
+                </div>
+            </div>
+
+            <div class="teacher-action">
+                <div class="teacher-price">¥79</div>
+                <a class="ask-btn" href="/teacher-profile/41">问老师</a>
+            </div>
+        </div>
+        
+            <div class="teacher-item">
+            <div style="position:relative;">
+                <img class="avatar" src="/static/uploads/teachers/42/avatar.svg" alt="郭妍">
+                
+            </div>
+
+            <div class="teacher-info">
+                <div class="teacher-name">郭妍</div>
+                <div class="teacher-meta">浙江大学 · 讲师</div>
+                <div class="teacher-stats">
+                    <span>统计 / 数学</span>
+                </div>
+            </div>
+
+            <div class="teacher-action">
+                <div class="teacher-price">¥109</div>
+                <a class="ask-btn" href="/teacher-profile/42">问老师</a>
+            </div>
+        </div>
+        
+            <div class="teacher-item">
+            <div style="position:relative;">
+                <img class="avatar" src="/static/uploads/teachers/43/avatar.svg" alt="郑梓">
+                
+            </div>
+
+            <div class="teacher-info">
+                <div class="teacher-name">郑梓</div>
+                <div class="teacher-meta">清华大学 · 副教授</div>
+                <div class="teacher-stats">
+                    <span>统计 / 数学</span>
+                </div>
+            </div>
+
+            <div class="teacher-action">
+                <div class="teacher-price">¥69</div>
+                <a class="ask-btn" href="/teacher-profile/43">问老师</a>
+            </div>
+        </div>
+        
+            <div class="teacher-item">
+            <div style="position:relative;">
+                <img class="avatar" src="/static/uploads/teachers/44/avatar.svg" alt="吴涛">
+                
+            </div>
+
+            <div class="teacher-info">
+                <div class="teacher-name">吴涛</div>
+                <div class="teacher-meta">华东师范大学 · 讲师</div>
+                <div class="teacher-stats">
+                    <span>统计 / 数学</span>
+                </div>
+            </div>
+
+            <div class="teacher-action">
+                <div class="teacher-price">¥109</div>
+                <a class="ask-btn" href="/teacher-profile/44">问老师</a>
+            </div>
+        </div>
+        
+            <div class="teacher-item">
+            <div style="position:relative;">
+                <img class="avatar" src="/static/uploads/teachers/45/avatar.svg" alt="郑妍">
+                
+            </div>
+
+            <div class="teacher-info">
+                <div class="teacher-name">郑妍</div>
+                <div class="teacher-meta">中山大学 · 教授</div>
+                <div class="teacher-stats">
+                    <span>统计 / 数学</span>
+                </div>
+            </div>
+
+            <div class="teacher-action">
+                <div class="teacher-price">¥79</div>
+                <a class="ask-btn" href="/teacher-profile/45">问老师</a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</body>
+</html>

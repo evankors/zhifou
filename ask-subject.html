@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>选择专业｜问老师</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, Arial;
+            background: #f5f6f7;
+        }
+
+        .container {
+            width: 1100px;
+            margin: 40px auto;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* 学科网格 */
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .subject-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 30px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .subject-card:hover {
+            box-shadow: 0 6px 16px rgba(0,0,0,.08);
+            transform: translateY(-2px);
+        }
+
+        .subject-icon {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        .subject-name {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .subject-desc {
+            font-size: 13px;
+            color: #666;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<style>
+.global-nav-search {
+    position: sticky;
+    top: 0;
+    z-index: 1200;
+    background: rgba(255,255,255,.95);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #eceff3;
+}
+
+.global-nav-search .inner {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.global-nav-search .logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #1f2937;
+    border: 1px solid #d8dde6;
+    background: #fff;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.global-nav-search form {
+    display: flex;
+    flex: 1;
+    background: #fff;
+    border: 1px solid #d8dde6;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.global-nav-search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 10px 14px;
+    background: transparent;
+}
+
+.global-nav-search button {
+    border: none;
+    background: #3dbb7f;
+    color: #fff;
+    padding: 0 18px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.global-nav-search .user-info {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: #444;
+}
+
+.global-nav-search .user-info a {
+    text-decoration: none;
+    color: #2f9f6f;
+}
+</style>
+
+<div class="global-nav-search">
+    <div class="inner">
+        <a class="logo" href="/">知否</a>
+        <form method="get" action="/">
+            <input name="q" value="" placeholder="搜索：理论 / 实验 / 老师 / 学院 / 论文">
+            <button type="submit">搜索</button>
+        </form>
+        
+    </div>
+</div>
+
+<div class="container">
+    <h1>问老师</h1>
+    <div class="subtitle">请选择你的硕士专业方向</div>
+
+    <div class="subject-grid">
+        
+        <a class="subject-card" href="/ask-teacher/management" style="text-decoration:none;color:inherit;">
+            <div class="subject-icon">📊</div>
+            <div class="subject-name">管理学</div>
+            <div class="subject-desc">工商管理 / 人力资源 / 战略</div>
+        </a>
+        
+        <a class="subject-card" href="/ask-teacher/psychology" style="text-decoration:none;color:inherit;">
+            <div class="subject-icon">🧠</div>
+            <div class="subject-name">心理学</div>
+            <div class="subject-desc">社会心理 / 临床 / 组织行为</div>
+        </a>
+        
+        <a class="subject-card" href="/ask-teacher/cs" style="text-decoration:none;color:inherit;">
+            <div class="subject-icon">💻</div>
+            <div class="subject-name">计算机</div>
+            <div class="subject-desc">人工智能 / 数据 / 软件工程</div>
+        </a>
+        
+        <a class="subject-card" href="/ask-teacher/education" style="text-decoration:none;color:inherit;">
+            <div class="subject-icon">📚</div>
+            <div class="subject-name">教育学</div>
+            <div class="subject-desc">高等教育 / 教育心理</div>
+        </a>
+        
+        <a class="subject-card" href="/ask-teacher/law" style="text-decoration:none;color:inherit;">
+            <div class="subject-icon">⚖️</div>
+            <div class="subject-name">法学</div>
+            <div class="subject-desc">民商法 / 公法 / 经济法</div>
+        </a>
+        
+        <a class="subject-card" href="/ask-teacher/economics" style="text-decoration:none;color:inherit;">
+            <div class="subject-icon">💰</div>
+            <div class="subject-name">经济学</div>
+            <div class="subject-desc">应用经济 / 金融 / 产业</div>
+        </a>
+        
+        <a class="subject-card" href="/ask-teacher/stats" style="text-decoration:none;color:inherit;">
+            <div class="subject-icon">📐</div>
+            <div class="subject-name">统计 / 数学</div>
+            <div class="subject-desc">数理统计 / 计量方法</div>
+        </a>
+        
+        <a class="subject-card" href="/ask-teacher/life" style="text-decoration:none;color:inherit;">
+            <div class="subject-icon">🧬</div>
+            <div class="subject-name">生命科学</div>
+            <div class="subject-desc">生物 / 医学 / 遗传</div>
+        </a>
+        
+        <a class="subject-card" href="/ask-teacher/engineering" style="text-decoration:none;color:inherit;">
+            <div class="subject-icon">🛠️</div>
+            <div class="subject-name">工学</div>
+            <div class="subject-desc">机械 / 材料 / 自动化</div>
+        </a>
+        
+    </div>
+</div>
+
+</body>
+</html>
